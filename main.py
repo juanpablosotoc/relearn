@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 import os
 
 
@@ -8,7 +8,7 @@ app.secret_key = os.getenv('relearn_flask_key')
 
 @app.route('/')
 def main():
-	return 'hello'
+	return render_template('./index.html')
 
 
 if __name__ == '__main__':
