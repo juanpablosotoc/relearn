@@ -4,11 +4,10 @@
         <meta >
         <title>Wayne Foundation</title>
         <link rel="icon" type="image/x-icon" href="{url_for('static', filename='./images/favicon.jpeg')}">
-        <link rel="stylesheet" href="{{url_for('static', filename='./css/index.css')}}">
     </head>
     <body>
         <h1>Wayne Foundation</h1>
-        <p>Login:</p>
+        <p>Sign Up:</p>
         <form action="/create-user" method="POST">
             <input type="text" id="email" name="email">
             <label for="email">Email</label>
@@ -16,6 +15,6 @@
             <label for="password">Password</label>
             <input type="submit">
         </form>
-        <a href="/create-user">Sign up</a>
+        <a href="/">Login</a>
     </body>
 </html>
